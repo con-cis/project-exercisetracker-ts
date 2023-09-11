@@ -1,0 +1,9 @@
+{
+  "debug": true,
+  "watch": ["src", "views", "public"],
+  "ext": "ts",
+  "events": {
+    "start": "tsc",
+    "restart": "tsc"
+  }
+}

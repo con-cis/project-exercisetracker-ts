@@ -1,0 +1,48 @@
+.vscode/*
+# Ignore node_modules
+node_modules/
+
+# Ignore compiled JavaScript files
+dist/
+*.js
+
+# Ignore TypeScript build artifacts
+*.tsbuildinfo
+
+# Ignore development environment variables
+.env
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore mochawsome-report
+mochawesome-report/
+
+# Ignore generated files
+dist/
+build/
+
+# Ignore IDE and editor-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore npm/yarn lock files
+package-lock.json
+yarn.lock
+
+# Ignore user-specific configurations
+.npmrc
+.nvmrc
+
+# Ignore MongoDB data files
+/data/
+/db/
+
+# Ignore coverage reports
+coverage/
+
+# Ignore .DS_Store (macOS system file)
+.DS_Store

@@ -1,0 +1,49 @@
+{
+	"name": "fcc-exercise-tracker",
+	"version": "0.1.0",
+	"description": "A REST API project, part of Free Code Camp's curriculum",
+	"main": "dist/index.js",
+	"scripts": {
+		"start": "ts-node src/index.ts",
+		"watch": "tsc --watch",
+		"build": "tsc --build --listFiles",
+		"serve": "node build/index.js",
+		"dev": "nodemon -V src/index.ts",
+		"debug": "nodemon --exec \"node --require ts-node/register src/index.ts\"",
+		"test": "mocha --require ts-node/register test/test.ts --timeout 10000 --reporter mochawesome --exit",
+		"coverage": "nyc --reporter=html --reporter=text npm run test/test"
+	},
+	"dependencies": {
+		"body-parser": "^1.20.2",
+		"cors": "^2.8.5",
+		"dotenv": "^16.3.1",
+		"express": "^4.18.2",
+		"express-rate-limit": "^6.9.0",
+		"express-validator": "^7.0.1",
+		"mochawesome": "^7.1.3",
+		"mongoose": "^7.5.0"
+	},
+	"repository": {
+		"url": "https://github.com/freeCodeCamp/boilerplate-project-exercisetracker"
+	},
+	"license": "MIT",
+	"keywords": [
+		"node",
+		"express"
+	],
+	"devDependencies": {
+		"@types/chai": "^4.3.6",
+		"@types/cors": "^2.8.14",
+		"@types/express": "^4.17.17",
+		"@types/mocha": "^10.0.1",
+		"@types/mongodb": "^4.0.7",
+		"@types/mongoose": "^5.11.97",
+		"@types/supertest": "^2.0.12",
+		"chai": "^4.3.8",
+		"mocha": "^10.2.0",
+		"nodemon": "^3.0.1",
+		"supertest": "^6.3.3",
+		"ts-node": "^10.9.1",
+		"typescript": "^5.2.2"
+	}
+}
