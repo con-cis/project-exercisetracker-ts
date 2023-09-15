@@ -1,13 +1,10 @@
+import "dotenv/config";
 import express, { Express, Request, Response } from "express";
 import cors from "cors";
 import { connect } from "mongoose";
 import rateLimit from "express-rate-limit";
-import dotenv from "dotenv";
 import * as usersController from "./controllers/usersController";
 import * as exerciseController from "./controllers/exerciseController";
-
-// Load environment variables
-dotenv.config();
 
 // Constants
 const PORT: number | string = process.env.PORT || 3000;
