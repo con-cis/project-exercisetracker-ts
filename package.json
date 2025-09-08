@@ -32,7 +32,7 @@
 		"express"
 	],
 	"devDependencies": {
-		"@types/chai": "^4.3.11",
+		"@types/chai": "^5.2.2",
 		"@types/cors": "^2.8.17",
 		"@types/express": "^4.17.21",
 		"@types/mocha": "^10.0.6",
